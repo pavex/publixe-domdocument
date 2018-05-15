@@ -1,0 +1,17 @@
+{
+    "name": "publixe/domdocument",
+    "description": "Extended DOMDocument with some selectors and tools.",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pavex",
+            "email": "pavex@ines.cz"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
