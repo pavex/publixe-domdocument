@@ -64,14 +64,14 @@
  * @param DOMNode
  * @return string
  */
-		public function getInnerHTML($element) 
+		public static function innerHTML($element)
 		{
-			$innerHTML = ''; 
+			$html = ''; 
 			$children = $element -> childNodes;
 			foreach ($children as $child) { 
-				$innerHTML .= $element -> ownerDocument -> saveHTML($child);
+				$html .= $element -> ownerDocument -> saveHTML($child);
 			}
-			return $innerHTML; 
+			return $html;
 		}
 
 
