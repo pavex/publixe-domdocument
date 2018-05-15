@@ -23,7 +23,7 @@
  * @param Element
  * @param string
  */
-		private function findElementByClass(&$elements, $element, $className)
+		private function findElementsByClass(&$elements, $element, $className)
 		{
 			if (isset($element -> tagName)) {
 				$class = $element -> getAttribute('class');
@@ -33,7 +33,7 @@
 				}
 				if ($element -> hasChildNodes()) {
 					foreach ($element -> childNodes as $child) {
-						$this -> findElementByClass($elements, $child, $className);
+						$this -> findElementsByClass($elements, $child, $className);
 					}
 				}
 			}
@@ -47,10 +47,10 @@
  * @param string
  * @return Array<Element>
  */
-		public function getElementByClassName($className)
+		public function getElementsByClassName($className)
 		{
 			$elements = [];
-			$this -> findElementByClass($elements, $this -> documentElement, $className);
+			$this -> findElementsByClass($elements, $this -> documentElement, $className);
 			return $elements;
 		}
 
