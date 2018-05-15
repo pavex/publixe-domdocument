@@ -1,2 +1,2 @@
 # publixe-domdocument
-Extended DOMDocument with findElementByClass, getElementByClassName and innerHTLM
+Extended DOMDocument with getElementsByClassName and innerHTLM
